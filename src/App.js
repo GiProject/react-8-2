@@ -1,25 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import Data from './Components/Data';
+import Error from './Components/Error';
+import Loading from './Components/Loading';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <div>
+    <Data />
+    <Error />
+    <Loading />
+  </div>;
 }
 
 export default App;
